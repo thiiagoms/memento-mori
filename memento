@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use MementoMori\Commands\{ BannerCommand, MementoMoriCommand};
+
+require_once  'bootstrap.php';
+
+BannerCommand::init();
+
+$userBirthDate = readline('>> Your Birthdate: ');
+
+/**
+ * @var MementoMoriCommand $app
+ */
+$app->report($userBirthDate);
