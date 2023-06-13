@@ -16,8 +16,7 @@
 - [Run :runner:](#run)
 
 ## Dependencies
-- PHP 7.4+
-- Composer
+- Docker :whale:
 
 ## Install
 
@@ -37,11 +36,16 @@ memento-mori $
 memento-mori $ chmod +x memento
 ```
 
+04 -) Run `docker-compose.yml` to stand up containers
+```shell
+memento-mori $ docker-compose up -d
+```
+
 ## Run
 
-01 -) Execute `memento` and input your birthdate :birthday: in `Y-m-d` format:
+01 -) Execute `memento conntainer` and input your birthdate :birthday: in `Y-m-d` format:
 ```shell
-memento-mori $ ./memento
+memento-mori $ docker-compose run app php memento
 
 ███╗   ███╗███████╗███╗   ███╗███████╗███╗   ██╗████████╗ ██████╗     ███╗   ███╗ ██████╗ ██████╗ ██╗
 ████╗ ████║██╔════╝████╗ ████║██╔════╝████╗  ██║╚══██╔══╝██╔═══██╗    ████╗ ████║██╔═══██╗██╔══██╗██║
