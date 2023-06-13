@@ -7,7 +7,11 @@
         <img
             src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"
             alt="PHP"
-        >
+        />
+        <img
+            src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
+            alt="Docker"
+        />
     </p>
 </div>
 
